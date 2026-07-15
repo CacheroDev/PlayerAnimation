@@ -2,15 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FeetCollision : MonoBehaviour
+public class FeetCollider : MonoBehaviour
 {
-    BoxCollider2D box;
-    [SerializeField] public bool onGround;
+    [SerializeField] public bool grounded;
 
     void Start()
     {
         
     }
+
 
     void Update()
     {
@@ -21,15 +21,15 @@ public class FeetCollision : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
-            onGround = true;
+            grounded = true;
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Ground"))
+        if (collision.gameObject.tag == "Ground")
         {
-            onGround = false;
+            grounded = false;
         }
     }
 }

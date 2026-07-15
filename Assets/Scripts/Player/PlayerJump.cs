@@ -5,22 +5,20 @@ using UnityEngine;
 public class PlayerJump : MonoBehaviour
 {
     Rigidbody2D rb;
-    [SerializeField] float jumpForce;
     [SerializeField] KeyCode jump;
+    [SerializeField] float jumpForce;
     [SerializeField] bool jumpRequested;
-    //[SerializeField] public bool isJumping;
-    [SerializeField] FeetCollision feetCol;
-
+    [SerializeField] FeetCollider feetCol;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        feetCol = GameObject.FindGameObjectWithTag("Feet").GetComponent<FeetCollision>();
+        feetCol = GameObject.FindGameObjectWithTag("Feet").GetComponent<FeetCollider>();
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(jump) && feetCol.onGround)
+        if (Input.GetKeyDown(jump) && feetCol.grounded)
         {
             jumpRequested = true;
         }
