@@ -319,6 +319,7 @@ GameObject:
   - component: {fileID: 1027503531}
   - component: {fileID: 1027503535}
   - component: {fileID: 1027503536}
+  - component: {fileID: 1027503537}
   m_Layer: 0
   m_Name: Princess
   m_TagString: Untagged
@@ -486,6 +487,21 @@ MonoBehaviour:
   jumpForce: 10
   jumpRequested: 0
   feetCol: {fileID: 0}
+--- !u!114 &1027503537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1027503530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d493e987c79a78944a80d0d781959a58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ascendGravity: 2
+  descendGravity: 3
+  isDescending: 0
 --- !u!1 &2133329562
 GameObject:
   m_ObjectHideFlags: 0
