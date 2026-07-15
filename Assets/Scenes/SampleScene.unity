@@ -320,6 +320,7 @@ GameObject:
   - component: {fileID: 1027503535}
   - component: {fileID: 1027503536}
   - component: {fileID: 1027503537}
+  - component: {fileID: 1027503538}
   m_Layer: 0
   m_Name: Princess
   m_TagString: Untagged
@@ -502,6 +503,27 @@ MonoBehaviour:
   ascendGravity: 2
   descendGravity: 3
   isDescending: 0
+--- !u!95 &1027503538
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1027503530}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a26c1cc095cda6a4984f59463513095a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2133329562
 GameObject:
   m_ObjectHideFlags: 0
